@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Records</title>
+</head>
+
+<body>
+    <h1>Records</h1>
+    <div>
+        Total number of records: {{.NumberOfRecords}}
+    </div>
+    <a href="/example/new">Add new record</a>
+    <ol>
+        {{range .RecordsList}}<li>{{.}}</li>
+        {{end}}
+    </ol>
+</body>
+
+</html>
